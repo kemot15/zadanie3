@@ -4,6 +4,12 @@ public class Product {
     String productInfo;
     Category category;
 
+    Product(String productName, double price, String productInfo) {
+        this.productName = productName;
+        this.price = price;
+        this.productInfo = productInfo;
+    }
+
     Product(String productName, double price, String productInfo, Category category) {
         this.productName = productName;
         this.price = price;
@@ -11,13 +17,13 @@ public class Product {
         this.category = category;
     }
 
-    Product(String productName, double price, String productInfo) {
-        this.productName = productName;
-        this.price = price;
-        this.productInfo = productInfo;
+
+
+    void showProductCategory(){
+        System.out.println("Nazwa produktu: " + productName + "\ncena: " + price + "\nInfo: " + productInfo + "\nKategoria: " + category.categoryName + " - " + category.categoryInfo +"\n");
     }
 
     void showProduct(){
-        System.out.println("Nazwa produktu: " + productName + "\ncena: " + price + "\nInfo: " + productInfo + "\nKategoria: " + category.categoryName);
+        System.out.println("Nazwa produktu: " + productName + "\ncena: " + price + "\nInfo: " + productInfo + "\nKategoria: "+"\n");
     }
 }

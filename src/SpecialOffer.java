@@ -12,4 +12,9 @@ public class SpecialOffer {
         this.dataEnd = dataEnd;
         this.disscount = disscount;
     }
+
+    void showOffer (){
+        double newPrice = product.price - disscount * product.price;
+        System.out.println(product.productName + " " + offerInfo + " od: " + dataStart + " do: " + dataEnd + " Znizka: " + disscount + " Nowa cene: " + newPrice);
+    }
 }
