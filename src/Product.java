@@ -18,6 +18,6 @@ public class Product {
     }
 
     void showProduct(){
-        System.out.println("Nazwa produktu: " + productName + "\ncena: " + price + "\nInfo: " + productInfo + "\nKategoria: " + category);
+        System.out.println("Nazwa produktu: " + productName + "\ncena: " + price + "\nInfo: " + productInfo + "\nKategoria: " + category.categoryName);
     }
 }
